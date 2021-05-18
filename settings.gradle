@@ -1,0 +1,3 @@
+rootProject.name = "GradleTransform"
+include ':app'
+include ':transform-plugin'
