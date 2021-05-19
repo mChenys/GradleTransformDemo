@@ -1,11 +1,10 @@
 package com.mchenys.plugin
 
-import com.android.annotations.NonNull
 import com.android.build.api.transform.*
 import org.gradle.api.Project
 import com.android.build.gradle.internal.pipeline.TransformManager
 import org.apache.commons.io.FileUtils
-
+import org.apache.commons.codec.digest.DigestUtils
 /**
  * 参考
  * https://www.jianshu.com/p/cf90c557b866

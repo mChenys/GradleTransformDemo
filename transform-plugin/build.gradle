@@ -11,3 +11,13 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+// 发包插件到本地仓库
+uploadArchives {
+    repositories.mavenDeployer {
+            repository(url: uri('../repo')) // 使用相对路径,将插件发布到上级目录的repo目录中
+            pom.groupId = 'com.mchenys.plugin'
+            pom.artifactId = 'tranform'
+            pom.version = '1.0.0'
+    }
+}
