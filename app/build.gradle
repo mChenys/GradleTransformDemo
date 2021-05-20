@@ -39,3 +39,9 @@ dependencies {
 }
 
 apply plugin:'com.mchenys.plugin'
+apply plugin:'ASMPlugin'
+
+asm{
+    annotationClassName  = 'com.mchenys.gradletransform.Inject'
+}
+
